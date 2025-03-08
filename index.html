@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Всеволод Селянин | Веб-разработчик</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Интерактивный фон -->
+  <div class="background"></div>
+
+  <!-- Шапка -->
+<header>
+  <nav>
+    <div class="logo">
+      <a href="#">
+        <span class="logo-text">Всеволод Селянин</span>
+        <span class="logo-subtext">Веб-разработчик</span>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">О себе</a></li>
+      <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+      <li><a href="#skills" class="nav-link">Навыки</a></li>
+      <li><a href="#contact" class="nav-link">Контакты</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
+  <!-- Герой-секция -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="Привет, я Всеволод">Привет, я Всеволод</h1>
+      <p class="typewriter">Веб-разработчик</p>
+      <a href="#portfolio" class="btn neon-button">Мои работы</a>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-text">Листай вниз</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- О себе -->
+  <!-- О себе -->
+<section id="about" class="about">
+  <h2 class="section-title">О себе</h2>
+  <div class="about-content">
+    <div class="about-card">
+      <div class="about-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h3>Веб-разработчик</h3>
+      <p>
+        Я занимаюсь созданием современных и адаптивных веб-сайтов. Мои проекты включают лендинги, интернет-магазины и веб-приложения.
+      </p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <h3>Дизайн</h3>
+      <p>
+        Я уделяю внимание не только функциональности, но и дизайну. Создаю интуитивно понятные и эстетичные интерфейсы.
+      </p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon">
+        <i class="fas fa-rocket"></i>
+      </div>
+      <h3>Инновации</h3>
+      <p>
+        Я постоянно изучаю новые технологии и инструменты, чтобы оставаться в курсе последних трендов в веб-разработке.
+      </p>
+    </div>
+  </div>
+  <div class="about-bio">
+    <p>
+      Привет! Меня зовут Всеволод, и я веб-разработчик с опытом работы более 5 лет. Я специализируюсь на создании современных и адаптивных веб-сайтов, которые не только выглядят красиво, но и работают быстро и эффективно.
+    </p>
+    <p>
+      В свободное время я люблю изучать новые технологии, участвовать в хакатонах и работать над личными проектами. Моя цель — создавать продукты, которые приносят пользу и радуют пользователей.
+    </p>
+  </div>
+</section>
+<!-- Портфолио -->
+<section id="portfolio" class="portfolio">
+    <h2 class="section-title">Портфолио</h2>
+    <div class="portfolio-filters">
+      <button class="filter-button active" data-filter="all">Все</button>
+      <button class="filter-button" data-filter="frontend">Фронтенд</button>
+      <button class="filter-button" data-filter="backend">Бэкенд</button>
+      <button class="filter-button" data-filter="fullstack">Фулстак</button>
+      <button class="filter-button" data-filter="design">Дизайн</button>
+    </div>
+    <div class="portfolio-grid">
+      <!-- Проект 1 -->
+      <div class="portfolio-card" data-category="frontend">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 1">
+        </div>
+        <div class="card-content">
+          <h3>Лендинг для стартапа</h3>
+          <p>Современный лендинг с анимациями и адаптивным дизайном.</p>
+          <div class="card-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 2 -->
+      <div class="portfolio-card" data-category="backend">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 2">
+        </div>
+        <div class="card-content">
+          <h3>API для онлайн-магазина</h3>
+          <p>REST API с авторизацией и интеграцией с платежными системами.</p>
+          <div class="card-tech">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 3 -->
+      <div class="portfolio-card" data-category="fullstack">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 3">
+        </div>
+        <div class="card-content">
+          <h3>Социальная сеть</h3>
+          <p>Полноценная социальная сеть с лентой, чатом и уведомлениями.</p>
+          <div class="card-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 4 -->
+      <div class="portfolio-card" data-category="frontend">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 4">
+        </div>
+        <div class="card-content">
+          <h3>Интерактивная карта</h3>
+          <p>Карта с маркерами и анимациями на основе Leaflet.js.</p>
+          <div class="card-tech">
+            <span>JavaScript</span>
+            <span>Leaflet.js</span>
+            <span>API</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 5 -->
+      <div class="portfolio-card" data-category="backend">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 5">
+        </div>
+        <div class="card-content">
+          <h3>Чат-бот для Telegram</h3>
+          <p>Бот для автоматизации заказов и поддержки клиентов.</p>
+          <div class="card-tech">
+            <span>Python</span>
+            <span>Telegram API</span>
+            <span>SQLite</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 6 -->
+      <div class="portfolio-card" data-category="design">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 6">
+        </div>
+        <div class="card-content">
+          <h3>Дизайн мобильного приложения</h3>
+          <p>UI/UX дизайн для приложения доставки еды.</p>
+          <div class="card-tech">
+            <span>Figma</span>
+            <span>Adobe XD</span>
+            <span>Прототипирование</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 7 -->
+      <div class="portfolio-card" data-category="fullstack">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 7">
+        </div>
+        <div class="card-content">
+          <h3>Платформа для онлайн-курсов</h3>
+          <p>Полноценная платформа с видеоуроками и тестами.</p>
+          <div class="card-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+  
+      <!-- Проект 8 -->
+      <div class="portfolio-card" data-category="frontend">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/400x300" alt="Проект 8">
+        </div>
+        <div class="card-content">
+          <h3>Анимационный сайт</h3>
+          <p>Сайт с использованием GSAP для сложных анимаций.</p>
+          <div class="card-tech">
+            <span>GSAP</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="#" class="btn neon-button">Посмотреть</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Навыки -->
+<!-- Навыки -->
+<section id="skills" class="skills">
+  <h2 class="section-title">Навыки</h2>
+  <div class="skills-grid">
+    <!-- HTML -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="95">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-html5"></i>
+        </div>
+      </div>
+      <h3>HTML5</h3>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="90">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+      </div>
+      <h3>CSS3</h3>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="85">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-js-square"></i>
+        </div>
+      </div>
+      <h3>JavaScript</h3>
+    </div>
+
+    <!-- React -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="80">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-react"></i>
+        </div>
+      </div>
+      <h3>React</h3>
+    </div>
+
+    <!-- Node.js -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="75">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-node-js"></i>
+        </div>
+      </div>
+      <h3>Node.js</h3>
+    </div>
+
+    <!-- Python -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="70">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-python"></i>
+        </div>
+      </div>
+      <h3>Python</h3>
+    </div>
+
+    <!-- Git -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="90">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-git-alt"></i>
+        </div>
+      </div>
+      <h3>Git</h3>
+    </div>
+
+    <!-- Figma -->
+    <div class="skill-card">
+      <div class="skill-progress-circle" data-progress="65">
+        <svg class="progress-circle" viewBox="0 0 120 120">
+          <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+          <circle class="progress-circle-fill" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="skill-icon">
+          <i class="fab fa-figma"></i>
+        </div>
+      </div>
+      <h3>Figma</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Контакты</h2>
+  <div class="contact-content">
+    <!-- Форма обратной связи -->
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Ваш email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn neon-button">Отправить</button>
+      </form>
+    </div>
+
+    <!-- Контактная информация -->
+    <div class="contact-info">
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3>Адрес</h3>
+        <p>г. Москва, ул. Примерная, 123</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email</h3>
+        <p>vsevolod@example.com</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <h3>Телефон</h3>
+        <p>+7 (123) 456-78-90</p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/vsevolod" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/vsevolod" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://t.me/vsevolod" target="_blank" class="social-link">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Футер -->
+  <!-- Футер -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <a href="#">
+        <span class="logo-text">Всеволод Селянин</span>
+        <span class="logo-subtext">Веб-разработчик</span>
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="#about" class="footer-link">О себе</a>
+      <a href="#portfolio" class="footer-link">Портфолио</a>
+      <a href="#skills" class="footer-link">Навыки</a>
+      <a href="#contact" class="footer-link">Контакты</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/vsevolod" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/vsevolod" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://t.me/vsevolod" target="_blank" class="social-link">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Всеволод Селянин. Все права защищены.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
